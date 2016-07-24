@@ -1,0 +1,19 @@
+<div class="miniCal">
+		<div class="month-container">
+			<div class="glyphicon glyphicon-menu-left btn otis-color miniCal-month-arrow miniCal-month-arrow-left no-round-bottom" ng-click="changeMonth(-1)"></div>
+			<div class="miniCal-current-month">{{moment.format('MMMM - YYYY')}}</div>
+			<div class="glyphicon glyphicon-menu-right btn otis-color miniCal-month-arrow miniCal-month-arrow-right no-round-bottom" ng-click="changeMonth(1)"></div>
+		</div>
+		<table class="miniCal-table">
+			<thead class="miniCal-thead">
+			<tr class="miniCal-tr-header">
+				<td class="miniCal-td" ng-repeat="day in weekdays">
+					{{day.abbr}}
+				</td>
+			</tr>
+			</thead>
+			<tr ng-repeat="i in [0,1,2,3,4,5]">
+				<td class="miniCal-body-td" ng-repeat="j in [0,1,2,3,4,5,6]" ng-class="[arr[pos(i,j)].class]" ng-click="changeDate(pos(i, j)); passDateSelected();"><div>{{arr[pos(i, j)].moment.format('D')}}</div></td>
+			</tr>
+		</table>
+</div>

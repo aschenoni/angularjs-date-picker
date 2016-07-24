@@ -1,0 +1,29 @@
+{
+  "name": "angularjs-date-picker",
+  "version": "0.0.1",
+  "description": "Yet another Angular Date-picker",
+  "main": "src/angularjs-date-picker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aschenoni/angularjs-date-picker.git"
+  },
+  "keywords": [
+    "angular",
+    "date",
+    "date-picker",
+    "datepicker",
+    "calendar"
+  ],
+  "author": "Austin Joyner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aschenoni/angularjs-date-picker/issues"
+  },
+  "homepage": "https://github.com/aschenoni/angularjs-date-picker#readme",
+  "dependencies": {
+    "moment": "^2.14.1"
+  }
+}

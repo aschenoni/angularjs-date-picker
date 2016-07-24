@@ -68,7 +68,7 @@ function DatePicker($q){
 					array.push(
 						{
 							moment: moment([scope.moment.year(), scope.moment.month(), i]),
-							class: i === scope.moment.date() ? 'current-day' : 'regular-day'
+							class: i === scope.moment.date() ? 'miniCal-current-day' : 'miniCal-regular-day'
 						});
 				}
 				var temp = moment([scope.moment.year(), scope.moment.month(), 1]);
@@ -81,7 +81,7 @@ function DatePicker($q){
 						var firstOfMonth = moment(firstOfMonth);
 						arr.unshift({
 							moment:	firstOfMonth.subtract(1, 'd'),
-							class: 'date-out-scope'
+							class: 'miniCal-date-out-scope'
 						});
 						
 						offset -= 1;
@@ -95,7 +95,7 @@ function DatePicker($q){
 									    scope.moment.month(), 
 										i])
 									.add(1, 'month'),
-								class: 'date-out-scope'
+								class: 'miniCal-date-out-scope'
 							});
 					}
 

@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/aschenoni/angularjs-date-picker#readme",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "moment": "^2.14.1"
   }
 }

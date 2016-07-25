@@ -10,7 +10,7 @@ Install from npm:
 ## Usage
 
 ### Prerequisites
-Your app must include moment, angular and bootstrap (which will also require Jquery) before the date picker will render correctly.
+Your app must include [moment](http://momentjs.com/), angular and bootstrap (which will also require Jquery) before the date picker will render correctly.
 
 Add them to your index.html:
 ```html
@@ -29,7 +29,7 @@ Additionally, you must add the directive source files:
 ```
 
 ### Using the directive
-Include the date picker module in your controller:
+Include the date picker module as a dependency in your module:
 ```javascript
 angular.module('my.module', ['ui.date.picker'])
 ```
@@ -45,7 +45,7 @@ The only exposed event is when a date is selected. Add the attribute `onDateSele
 	<div><date-picker on-date-selected="fireDateChange(date)"></div>
 ```
 
-`onDateSelected` takes a function with the input parameter of a moment obj. Your outer function passed to the directive could look like this:
+`onDateSelected` takes a function with the input parameter of a [Moment](http://momentjs.com/) object. Your outer function passed to the directive could look like this:
 ```javascript
 	function fireDateChange(date){
 		var currentDate = date.format('YYYY-MM-DD');
